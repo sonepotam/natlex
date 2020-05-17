@@ -10,7 +10,7 @@ import org.springframework.http.MediaType;
 import java.util.List;
 
 @RestController
-public class SectionController {
+public class SectionController{
 
     private SectionService sectionService;
 

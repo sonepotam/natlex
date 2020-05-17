@@ -11,7 +11,7 @@ import java.util.Set;
 @Entity
 @Table(name = "sections")
 @Data @NoArgsConstructor
-public class Section implements Serializable {
+public class Section implements Serializable{
 
     @Id
     @Column( name = "name")

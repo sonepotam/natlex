@@ -8,7 +8,7 @@ spring:
       force: true
 
   application:
-    name: goods
+    name: xxx
 
   datasource:
     initialization-mode: always
@@ -35,18 +35,3 @@ log4j:
 server:
   port: 8082
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, info, env, loggers, logfile, metrics, prometheus
-  endpoint:
-    metrics:
-      enabled: true
-    prometheus: enabled
-    shutdown:
-      enabled: true
-  metrics:
-    export:
-      prometheus:
-        enabled: true

@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Entity
 @Table( name = "geoclass")
 @Data @NoArgsConstructor
-public class GeologicalClass implements Serializable {
+public class GeologicalClass implements Serializable{
 
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)

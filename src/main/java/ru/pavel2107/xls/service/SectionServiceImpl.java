@@ -10,7 +10,7 @@ import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Service
-public class SectionServiceImpl implements SectionService{
+public class SectionServiceImpl implements SectionService {
 
     private SectionRepo repository;
 

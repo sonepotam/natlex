@@ -10,7 +10,7 @@ import ru.pavel2107.xls.service.SectionService;
 import java.util.List;
 
 @RestController
-public class ByCodeController {
+public class ByCodeController{
     private SectionService sectionService;
 
     @Autowired

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.concurrent.Future;
 
 @Component
-public class Обработчик {
+public class Обработчик{
 
     private SectionService сервис;
     private TranslatorService транслятор;

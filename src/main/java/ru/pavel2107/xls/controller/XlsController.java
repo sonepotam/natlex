@@ -17,7 +17,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
-public class XlsController {
+public class XlsController{
     static private Logger logger = LogManager.getLogger();
 
     AtomicInteger counter = new AtomicInteger(0);

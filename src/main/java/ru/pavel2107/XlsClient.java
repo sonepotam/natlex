@@ -18,7 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @SpringBootApplication
 @EnableAsync
-public class XlsClient {
+public class XlsClient{
 
     Logger logger = LogManager.getLogger();
 

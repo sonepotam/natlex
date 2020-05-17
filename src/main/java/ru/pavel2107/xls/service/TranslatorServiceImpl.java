@@ -23,7 +23,7 @@ import java.util.List;
 //
 
 @Service
-public class TranslatorServiceImpl implements TranslatorService{
+public class TranslatorServiceImpl implements TranslatorService {
 
     private static Logger logger = LogManager.getLogger();
     private Config config;

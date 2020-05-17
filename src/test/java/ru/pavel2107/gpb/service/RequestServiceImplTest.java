@@ -41,7 +41,6 @@ import ru.pavel2107.xls.service.SectionServiceImpl;
 public class RequestServiceImplTest {
 
     @Autowired SectionService sectionService;
-  //  @Autowired Config config;
 
     @Test
     public void проверим_запись(){
@@ -56,37 +55,7 @@ public class RequestServiceImplTest {
 
         section = sectionService.save( section);
         System.out.println( section);
-
-
     }
 
-
-
-    @Test
-    public void читать_xls() throws Exception {
-        Workbook wb = WorkbookFactory.create(new FileInputStream("D:\\Java\\IdeaProjects\\xlsClient\\files\\in\\file1.xls"));
-        Sheet sheet = wb.getSheetAt( 0);
-
-        int rowStart = 0; // Math.min(15, sheet.getFirstRowNum());
-        int rowEnd = sheet.getLastRowNum();
-        for (int rowNum = rowStart; rowNum < rowEnd; rowNum++) {
-            Row r = sheet.getRow(rowNum);
-            if (r == null) {
-                // This whole row is empty
-                // Handle it as needed
-                continue;
-            }
-            int lastColumn = r.getLastCellNum();
-            for (int cn = 0; cn < lastColumn; cn++) {
-                Cell c = r.getCell(cn, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
-                if (c == null) {
-                    // The spreadsheet is empty in this cell
-                } else {
-                    // Do something useful with the cell's contents
-                    System.out.println( c.getStringCellValue());
-                }
-            }
-        }
-    }
 
 }

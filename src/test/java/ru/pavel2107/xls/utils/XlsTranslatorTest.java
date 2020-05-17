@@ -3,19 +3,9 @@ package ru.pavel2107.xls.utils;
 import org.junit.Test;
 import ru.pavel2107.xls.domain.GeologicalClass;
 import ru.pavel2107.xls.domain.Section;
-//import ru.pavel2107.xls.service.XlsTranslator;
-
-import java.io.FileInputStream;
-import java.util.List;
 
 public class XlsTranslatorTest {
 
-    @Test
-    public void проверим_чтение() throws Exception{
-        FileInputStream stream = new FileInputStream("D:\\Java\\IdeaProjects\\xlsClient\\files\\in\\file1.xls");
-        //List<Section> list = XlsTranslator.read( stream);
-        //System.out.println( list);
-    }
 
     @Test
     public void проверим_запись(){
