@@ -1,0 +1,52 @@
+spring:
+  main:
+    banner-mode: "off"
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+  application:
+    name: goods
+
+  datasource:
+    initialization-mode: always
+    url: jdbc:postgresql://localhost:5432/natlex
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    username: postgres
+    password: 12345
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+log4j:
+  logger:
+    org:
+      hibernate:
+        type: DEBUG
+
+server:
+  port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, loggers, logfile, metrics, prometheus
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus: enabled
+    shutdown:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
